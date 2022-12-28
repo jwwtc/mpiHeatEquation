@@ -20,15 +20,16 @@ which is asymptotically correct. $L$ is the length of the plate’s edge and $\t
 
 ## Results
 
-#### Numerical and Analytical Solutions Comparison
+### Numerical and Analytical Solutions Comparison
 
 Surface Plot            |  Contour Plot
 :-------------------------:|:-------------------------:
 <img src="figures/numerical-temp-surf.png" style="width:600px;"/>  |  <img src="figures/comparison_temp.png" style="width:600px;"/>
 
-#### Strong Scaling
+
+### Strong Scaling
 
 Speedup            |  Time
 :-------------------------:|:-------------------------:
-<img src="figures/strong-scaling_time.png" style="width:600px;"/>  |  <img src="figures/strong-scaling_time.png" style="width:600px;"/>
+<img src="figures/strong-scaling_speedup.png" style="width:600px;"/>  |  <img src="figures/strong-scaling_time.png" style="width:600px;"/>
 
