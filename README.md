@@ -7,10 +7,11 @@ Overall, MPI parallelization is a powerful tool for improving the efficiency and
 ### Results
 
 #### Monolingual vs. Bilingual GPT-2 Experiment: Model perplexity as a function of weight deletion
-<img src="figures/numerical-temp-surf.png" style="width:400px;"/>
-<img src="figures/comparison_temp.png" style="width:400px;"/>
+
+Solarized dark             |  Solarized Ocean
+:-------------------------:|:-------------------------:
+<img src="figures/numerical-temp-surf.png" style="width:400px;"/>  |  <img src="figures/comparison_temp.png" style="width:400px;"/>
 
 #### Linear Representation Visual Model Experiments: MSE as a function of additive noise on model weights
 <img src="figures/strong-scaling_time.png" style="width:400px;"/>
 
-##### MNIST dataset
