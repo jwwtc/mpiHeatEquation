@@ -33,8 +33,8 @@ Speedup            |  Time
 :-------------------------:|:-------------------------:
 <img src="figures/strong-scaling_speedup.png" style="width:600px;"/>  |  <img src="figures/strong-scaling_time.png" style="width:600px;"/>
 
-###  To compile.
+####  To compile.
 mpicc -O2 -std=c99 -o main.exe main.c functions.c -lm
 
-###  To run.
+####  To run.
 mpiexec -n <number of processes> main.exe
