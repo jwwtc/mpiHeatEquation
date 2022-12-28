@@ -9,14 +9,14 @@ For the numerical solution, we time-match:
 $\frac{\partial \theta}{\partial t}=\kappa\left(\frac{\partial^2 \theta}{\partial x^2}+\frac{\partial^2 \theta}{\partial y^2}\right)$
 
 to a steady-state solution on a uniform mesh, with the following finite difference approximation:
+
 $\frac{\theta_{i, j}^{t+1}-\theta_{i, j}^t}{\delta \mathrm{t}}=\left(\frac{\theta_{i+1, j}^t-2 \theta_{i, j}^t+\theta_{i-1, j}^t}{\delta x^2}+\frac{\theta_{i, j+1}^t-2 \theta_{i, j}^t+\theta_{i, j-1}^t}{\delta \mathrm{y}^2}\right)$
 
 As for the analytical solution, this is given by the Fourier series:
 
 $\theta(x, y)=\sum_{n=1,3,5, \ldots}^{\infty} \frac{4 \theta_N}{n \pi} \sin \left(\frac{n \pi x}{L}\right) \sinh \left(\frac{n \pi y}{L}\right) / \sinh (n \pi)$,
-which is asymptotically correct.
 
-$L$ is the length of the plate’s edge and $\theta_{N}$ is the constant temperature on the plate’s top side. Regarding time-stepping and numerical stability, we made sure that $\mathrm{dt}<0.25 \mathrm{dx}^2 / \kappa$.
+which is asymptotically correct. $L$ is the length of the plate’s edge and $\theta_{N}$ is the constant temperature on the plate’s top side. Regarding time-stepping and numerical stability, we made sure that $\mathrm{dt}<0.25 \mathrm{dx}^2 / \kappa$.
 
 ## Results
 
@@ -27,5 +27,8 @@ Surface Plot            |  Contour Plot
 <img src="figures/numerical-temp-surf.png" style="width:600px;"/>  |  <img src="figures/comparison_temp.png" style="width:600px;"/>
 
 #### Strong Scaling
-<img src="figures/strong-scaling_time.png" style="width:400px;"/>
+
+Speedup            |  Time
+:-------------------------:|:-------------------------:
+<img src="figures/strong-scaling_time.png" style="width:600px;"/>  |  <img src="figures/strong-scaling_time.png" style="width:600px;"/>
 
