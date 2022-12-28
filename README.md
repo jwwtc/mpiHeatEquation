@@ -1,5 +1,13 @@
 # mpiHeatEquation
 
+###  To compile.
+
+mpicc -O2 -std=c99 -o main.exe main.c functions.c -lm
+
+###  To run.
+
+mpiexec -n <number of processes> main.exe
+
 ## Abstract
 Overall, MPI parallelization is a powerful tool for improving the efficiency and accuracy of heat conduction simulations, and it has numerous applications in various fields of engineering and science. Here, we are presenting the parallelized solution of the two-dimensional heat conduction equation on a square plate. We leverage collective communications and certain MPI functions to achieve convergence to the analytical solution. Metrics of scalability are widely used to illustrate the ability of both hardware and software to deliver greater compute with more hardware. Thus, we will also perform a weak and a strong scaling analysis of our program.
 
@@ -32,7 +40,3 @@ Surface Plot            |  Contour Plot
 Speedup            |  Time
 :-------------------------:|:-------------------------:
 <img src="figures/strong-scaling_speedup.png" style="width:600px;"/>  |  <img src="figures/strong-scaling_time.png" style="width:600px;"/>
-
-###  Compiling & Running
-To compile: mpicc -O2 -std=c99 -o main.exe main.c functions.c -lm
-To execute: mpiexec -n <number of processes> main.exe
