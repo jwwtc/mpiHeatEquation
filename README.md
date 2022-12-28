@@ -6,7 +6,7 @@ Overall, MPI parallelization is a powerful tool for improving the efficiency and
 ### Theory
 For the numerical solution, we time-match:
 
-![equation](https://latex.codecogs.com/svg.image?\frac{\partial&space;\theta}{\partial&space;t}=\kappa\left(\frac{\partial^2&space;\theta}{\partial&space;x^2}&plus;\frac{\partial^2&space;\theta}{\partial&space;y^2}\right)" title="https://latex.codecogs.com/svg.image?\frac{\partial \theta}{\partial t}=\kappa\left(\frac{\partial^2 \theta}{\partial x^2}+\frac{\partial^2 \theta}{\partial y^2}\right))
+$\frac{\partial \theta}{\partial t}=\kappa\left(\frac{\partial^2 \theta}{\partial x^2}+\frac{\partial^2 \theta}{\partial y^2}\right)$
 
 to a steady-state solution on a uniform mesh, with the following finite difference approximation:
 
