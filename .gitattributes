@@ -1,0 +1,4 @@
+*.c linguist-detectable=true
+*.ipynb linguist-detectable=false
+*.png linguist-detectable=false
+*.csv linguist-detectable=false
