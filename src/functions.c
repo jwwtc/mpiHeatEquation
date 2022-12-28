@@ -1,22 +1,9 @@
 #include "functions.h"
+#include "constants.h"
 
 #include <mpi.h>
 #include <math.h>
 #include <stdio.h>
-
-#define NX 129
-#define NY 129
-
-#define LX 20.0f
-#define LY 20.0f
-
-#define DX LX / ((REAL)(NX - 1.0))
-#define DY LY / ((REAL)(NY - 1.0))
-
-#define H DX
-
-#define K   1.0f
-#define DT  0.20f * DX * DX / K
 
 #define PI M_PI
 #ifndef M_PI
