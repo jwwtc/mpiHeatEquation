@@ -1,2 +1,2 @@
 # mpiHeatEquation
-An MPI for solving the two-dimensional heat equation.
+An MPI Program For Solving The Two-Dimensional Heat Equation.
