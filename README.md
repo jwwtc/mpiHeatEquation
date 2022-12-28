@@ -5,7 +5,7 @@ Overall, MPI parallelization is a powerful tool for improving the efficiency and
 
 ### Theory
 For the numerical solution, we time-match:
-![equation]([img]http://www.sciweavers.org/tex2img.php?eq=%5Cfrac%7B%5Cpartial%20%5Ctheta%7D%7B%5Cpartial%20t%7D%3D%5Ckappa%5Cleft%28%5Cfrac%7B%5Cpartial%5E2%20%5Ctheta%7D%7B%5Cpartial%20x%5E2%7D%2B%5Cfrac%7B%5Cpartial%5E2%20%5Ctheta%7D%7B%5Cpartial%20y%5E2%7D%5Cright%29&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=0[/img])
+![equation](http://www.sciweavers.org/tex2img.php?eq=%5Cfrac%7B%5Cpartial%20%5Ctheta%7D%7B%5Cpartial%20t%7D%3D%5Ckappa%5Cleft%28%5Cfrac%7B%5Cpartial%5E2%20%5Ctheta%7D%7B%5Cpartial%20x%5E2%7D%2B%5Cfrac%7B%5Cpartial%5E2%20%5Ctheta%7D%7B%5Cpartial%20y%5E2%7D%5Cright%29&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=0)
 to a steady-state solution on a uniform mesh, with the following finite difference approximation:
 
 
