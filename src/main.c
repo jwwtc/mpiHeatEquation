@@ -1,8 +1,5 @@
 /*
  * MPI Program for Solving the Two-Dimensional Heat Equation.
- *
- * Author: Michael Paleos
- * Date: 12/14/2022
  * 
  * to compile: mpicc -O2 -std=c99 -o main.exe main.c functions.c -lm
  * to execute: mpiexec -n <number of processes> main.exe
