@@ -1,9 +1,6 @@
 /*
  * Serial Implementation of the 2D Heat Conduction Equation.
  *
- * Author: Michael Paleos
- * Date: 12/07/2022
- *
  * to compile: gcc -O2 -std=c99 ser_heat_equation.c -lm -o ser_heat.exe
  * to execute: ./ser_heat.exe
  *
