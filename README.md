@@ -18,7 +18,7 @@ $\theta(x, y)=\sum_{n=1,3,5, \ldots}^{\infty} \frac{4 \theta_N}{n \pi} \sin \lef
 
 which is asymptotically correct. $L$ is the length of the plate’s edge and $\theta_{N}$ is the constant temperature on the plate’s top side. Regarding time-stepping and numerical stability, we made sure that $\mathrm{dt}<0.25 \mathrm{dx}^2 / \kappa$.
 
-## Results
+## Sample Results
 
 ### Numerical and Analytical Solutions Comparison
 
