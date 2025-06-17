@@ -68,7 +68,7 @@ void writeOutputComparison(const REAL *x, const REAL *y, const REAL *u, const RE
 
     for (i = 0; i < NX; i++) {
         for (j = 0; j < NY; j++) {
-            //printf("(X, Y, u_num): %d %d %d \n\n", x[i*NX+j], y[i*NX+j], u[i*NX+j]);
+            //printf("(X, Y, u_num): %d %d %d \n\n", x[i*NY+j], y[i*NY+j], u[i*NY+j]);
             fprintf(output, "%8f,%8f,%8f,%8f\n", 
             x[i*NY+j],y[i*NY+j],u[i*NY+j],u_exact[i*NY+j]);
         }
@@ -88,11 +88,11 @@ void writeOutputLine(const REAL *x, const REAL *y, const REAL *u, const REAL *u_
     for (i = 0; i < NX; i++) {
         for (j = 0; j < NY; j++) {
 
-        if (y[i*NX+j] == LY / 2)
+        if (y[i*NY+j] == LY / 2)
             {fprintf(output, "%8f,%8f,%8f,%8f\n", 
             x[i*NY+j],y[i*NY+j],u[i*NY+j],u_exact[i*NY+j]);}
 
-        else if (x[i*NX+j] == LX / 2)
+        else if (x[i*NY+j] == LX / 2)
             {fprintf(output, "%8f,%8f,%8f,%8f\n", 
             x[i*NY+j],y[i*NY+j],u[i*NY+j],u_exact[i*NY+j]);}
         }
@@ -166,11 +166,11 @@ void heatEquation(REAL *unew, REAL *u, const INT start, const INT end, const REA
         for (INT j = 1; j < NY; j++) {
 
             // Set boundary conditions.
-            if (y[i*NX+j] == LY)
-                {u[i*NX+j] = 100; unew[i*NX+j] = 100;}
+            if (y[i*NY+j] == LY)
+                {u[i*NY+j] = 100; unew[i*NY+j] = 100;}
 
-            else if (x[i*NX+j] == 0 || x[i*NX+j] == LX || y[i*NX+j] == 0) 
-                {u[i*NX+j] = 0; unew[i*NX+j] = 0;}
+            else if (x[i*NY+j] == 0 || x[i*NY+j] == LX || y[i*NY+j] == 0)
+                {u[i*NY+j] = 0; unew[i*NY+j] = 0;}
 
             // Solve for the other coordinates.
             else {
