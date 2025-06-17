@@ -1,8 +1,8 @@
 /*
  * Serial Implementation of the 2D Heat Conduction Equation.
  *
- * to compile: gcc -O2 -std=c99 ser_heat_equation.c -lm -o ser_heat.exe
- * to execute: ./ser_heat.exe
+ * build with: `make serial`
+ * execute with: `./ser_heat.exe`
  *
  */
 

@@ -10,6 +10,11 @@
 #define DX LX / ((REAL)(NX - 1.0))
 #define DY LY / ((REAL)(NY - 1.0))
 
+#ifndef M_PI
+    #define M_PI 3.14159265358979323846
+#endif
+#define PI M_PI
+
 #define H DX
 #define K   1.0f
 #define DT  0.20f * DX * DX / K
