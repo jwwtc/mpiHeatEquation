@@ -5,10 +5,7 @@
 #include <math.h>
 #include <stdio.h>
 
-#define PI M_PI
-#ifndef M_PI
-    #define M_PI 3.14159265358979323846
-#endif
+/* Use PI definition from constants.h */
 
 // Function to construct the mesh.
 void meshGrid (REAL *x, REAL *y)

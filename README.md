@@ -33,8 +33,15 @@ Speedup            |  Time
 :-------------------------:|:-------------------------:
 <img src="figures/strong-scaling_speedup.png" style="width:600px;"/>  |  <img src="figures/strong-scaling_time.png" style="width:600px;"/>
 
-####  To compile.
-mpicc -O2 -std=c99 -o main.exe main.c functions.c -lm
+#### To compile
+```
+make
+```
 
-####  To run.
-mpiexec -n <number of processes> main.exe
+#### To run
+```
+mpiexec -n <number of processes> ./main.exe
+```
+
+The provided `Makefile` assumes `mpicc` is available in your `PATH`. Feel free to
+adjust the `CC` variable if your MPI compiler uses a different name.
